@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+$mdc-theme-primary: #1565c0; // primary color
+$mdc-theme-secondary: #388e3c; // secondary color
+
+@import "~@angular-mdc/theme/material";
+
+@mixin mdc-theme-prop {
+
+}
+.demo-card {
+    width: 350px;
+    margin: 28px;
+  }
+  
+  .demo-card__primary {
+    padding: 1rem;
+  }
+  
+  .demo-card__title {
+    margin: 0;
+  }
+  
+  .demo-card__subtitle {
+    @include mdc-theme-prop;
+  
+    margin: 0;
+  }
+  
+  .demo-card__secondary {
+    @include mdc-theme-prop;
+  
+    padding: 0 1rem 8px 1rem;
+  }
+  
+  .demo-card__media--16-9 {
+    background-image: url(https://material-components-web.appspot.com/images/16-9.jpg);
+  }
+
+  
